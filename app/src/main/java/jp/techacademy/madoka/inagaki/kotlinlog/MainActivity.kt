@@ -9,22 +9,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        total(50,1000)
 
-        val t = total(50, 1000)
-        Log.d("kotelintest", t.toString())
+        val human1= Human("ヤマダ太郎",35,"釣り")
+        val human2= Woman("ヤマダ花子",65,"編み物")
+
+        human1.say()
+        human1.think()
+        human2.say()
+        human2.think()
     }
-
-
-    private fun total(first: Int, last: Int): Int {
-        var sum = 0
-        for (i in first..last){
-            sum +=1
-        }
-
-        return sum
-
-    }
-
-
 }
